@@ -4,7 +4,7 @@ var pattern = /^([\d\.]+)\s+([\d\.]+)\s+(.*)$/;
 
 var parse = function(text) {
 
-    return text.trim().split(/(\r?\n)/).reduce(function (all, chapter) {
+    return text.trim().split(/(\r\n|\r|\n)/).reduce(function (all, chapter) {
 
         var matches = chapter.match(pattern);
 
