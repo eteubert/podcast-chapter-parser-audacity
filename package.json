@@ -1,6 +1,6 @@
 {
   "name": "podcast-chapter-parser-audacity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse Audacity podcast chapters format into JSON",
   "main": "index.js",
   "scripts": {
