@@ -28,3 +28,13 @@ var chapters = Audacity.parse("1.200000	1.200000	Intro\n20.500000	20.500000	Say 
 npm install
 npm test
 ```
+
+## Changelog
+
+1.0.2 - 2017-09-21
+
+- accept comma as time separator
+
+1.0 - 2017-02-17
+
+- Release

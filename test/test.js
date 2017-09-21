@@ -17,6 +17,10 @@ describe('Audacity', function () {
           assert.deepEqual([intro_chapter], Audacity.parse("1.200000    1.200000    Intro"));
         });
 
+        it('should accept comma as separator', function() {
+          assert.deepEqual([intro_chapter], Audacity.parse("1,200000    1,200000    Intro"));
+        });
+
         it('should ignore trailing and leading whitespace in file', function() {
           assert.deepEqual([intro_chapter], Audacity.parse(" 1.2 1.2 Intro "));
         });

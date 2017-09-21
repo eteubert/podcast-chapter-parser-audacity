@@ -1,6 +1,6 @@
 var npt = require("normalplaytime");
 
-var pattern = /^([\d\.]+)\s+([\d\.]+)\s+(.*)$/;
+var pattern = /^([\d\.,]+)\s+([\d\.,]+)\s+(.*)$/;
 
 var parse = function(text) {
 
@@ -9,7 +9,7 @@ var parse = function(text) {
         var matches = chapter.match(pattern);
 
         if (matches) {
-            var time = npt.parse(matches[1]);
+            var time = npt.parse(matches[1].replace(",", "."));
             var title = matches[3].trim();
 
             if (time !== null) {
